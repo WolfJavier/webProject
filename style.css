@@ -1,5 +1,29 @@
+
+/* CONFIGURACIONES INICIALES*/
 :root{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*SELECTOR UNIVERSAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*RESPONSIVE*/
+header{
+    width: 100%;
+    height: 150px;
+    border: 5px solid darkgray ;
+}
+main{
+    width: 100%;
+    height: 1000px;
+    border: 5px solid darkslateblue;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    border: 5px solid darkslategray;
 }
 
 /*HACIENDO LA BARRA DE NAVEGACIÓN DEL HEADER*/
@@ -27,8 +51,8 @@
 .header-nav__item a:active{
     color:turquoise;
 }
-/*
-.header-nav__item a::after{
-  content: "    |   ";
+
+/*ESTILO DEL CUERPO DE LA PÁGINA*/
+.main-about{
+    text-align: center;
 }
-*/
