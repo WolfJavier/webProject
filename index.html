@@ -9,33 +9,33 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
-            <figure>
-                <img src="" alt="Logo de CreandoMusica">
+        <header class="header">
+            <figure class="header__logo">
+                <img src="./Logo1.png" alt="Logo de CreandoMusica" class="header__logo-icon">
+                <span class="header__logo-title">CreandoMusica</span>
             </figure>
-            <h1>CreandoMusica</h1>
+            
             <nav>
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="#">Pagina de inicio</a></li>
-                    <li class="header-nav__item"><a href="#">¿Qué es CreandoMusica?</a></li>
-                    <li class="header-nav__item"><a href="#">Nuestro Soundcloud</a></li>
-                    <li class="header-nav__item"><a href="#">Equipo</a></li>
-                    <li class="header-nav__item"><a href="#">Contacto</a></li>
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a href="#">Pagina de inicio</a></li>
+                    <li class="header__nav-item"><a href="#">¿Qué es CreandoMusica?</a></li>
+                    <li class="header__nav-item"><a href="#">Nuestro Soundcloud</a></li>
+                    <li class="header__nav-item"><a href="#">Equipo</a></li>
+                    <li class="header__nav-item"><a href="#">Contacto</a></li>
                 </ul>                    
             </nav>
         </header>
         <main>
-            <section>
+            <section class="main__banner">
                 <figure>
-                    <img src="" alt="Imágen de Banner de CreandoMusica">
-                    <h1 class="b">############################</h1>
-                    <h1 class="b">### Banner CreandoMusica ###</h1>
-                    <h1 class="b">############################</h1>
+                    <img src="./background-banner-alt.jpg" alt="Imágen de Banner de CreandoMusica" id="banner">
+                    <h1>CreandoMusica</h1>
+                    <p>Soluciones musicales para tus proyectos</p>
                 </figure>
                 
             </section>
-            <section >
-                <article class="main-about">
+            <section class="main__content" >
+                <article class="main__content-about">
                     <h2>¿Qué es CreandoMusica?</h2>
                     <p>¡Hola!,</p>
                     <p>Somos una Agencia de Producción Musical enfocada en todo el proceso de creación, para llevar tus ideas a resultados musicales de calidad y competencia para la industria.</p>
@@ -44,7 +44,7 @@
                     <p>También contamos con un departamento pedagógico donde podrás aprender y mejorar tus habilidades, con clases y talleres de fundamentos de la música, composición, arreglos y producción musical.</p>
                     <p>¡No dudes en contactarnos!</p>
                 </article>
-                <article>
+                <article class="main__content-portafolio">
                     <h2>Portafolio</h2>
                     <h4>Audios</h4>
                     <a href="#">Link a nuestro Soundcloud </a>
@@ -60,18 +60,18 @@
                         <source src=" ">
                     </video>
                 </article>
-                <article>
+                <article class="main__content-equipo">
                     <h2>Equipo</h2>
                     <figure>
-                        <img src="" alt="foto de bruno">
+                        <img src="./Foto_equipo-alt.png" alt="foto de bruno">
                         <figcaption>Bruno</figcaption>
-                        <img src="" alt="foto de david">
+                        <img src="./Foto_equipo-alt.png" alt="foto de david">
                         <figcaption>David</figcaption>
-                        <img src="" alt="foto de javier">
+                        <img src="./Foto_equipo-alt.png"" alt="foto de javier">
                         <figcaption>Javier</figcaption>
                     </figure>
                 </article>
-                <article>
+                <article class="main__content-contacto">
                     <h2>Contacto</h2>
                     <Form>
                         <label for="correo">
@@ -92,10 +92,16 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <h3>CreandoMusica Chile</h3>
-            <p>Todos los derechos Reservados, 2021</p>
-            <p>Valparaíso, Chile</p>
+        <footer class="footer">
+            <section class="footer__info">
+                <h3>CreandoMusica Chile</h3>
+                <p>Todos los derechos Reservados, 2021</p>
+                <p>Valparaíso, Chile</p>
+            </section>
+            <section class="footer">
+
+            </section>
+            
             
         </footer>
     </body>
