@@ -9,33 +9,18 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header class="header">
-            <figure class="header__logo">
-                <img src="./Logo1.png" alt="Logo de CreandoMusica" class="header__logo-icon">
-                <span class="header__logo-title">CreandoMusica</span>
-            </figure>
-            
-            <nav>
-                <ul class="header__nav">
-                    <li class="header__nav-item"><a href="#">Pagina de inicio</a></li>
-                    <li class="header__nav-item"><a href="#">¿Qué es CreandoMusica?</a></li>
-                    <li class="header__nav-item"><a href="#">Nuestro Soundcloud</a></li>
-                    <li class="header__nav-item"><a href="#">Equipo</a></li>
-                    <li class="header__nav-item"><a href="#">Contacto</a></li>
-                </ul>                    
-            </nav>
-        </header>
-        <main>
-            <section class="main__banner">
+        <header>
+        <section class="header__banner">
                 <figure>
-                    <img src="./background-banner-alt.jpg" alt="Imágen de Banner de CreandoMusica" id="banner">
-                    <h1>CreandoMusica</h1>
-                    <p>Soluciones musicales para tus proyectos</p>
+                    <img src="./banner-small.jpg" alt="Imágen de Banner de CreandoMusica" class="main__banner-img">
+                    <h1 class="header__banner-text">CreandoMusica</h1>
+                    <p class="header__banner-text">Soluciones musicales para tus proyectos</p>
                 </figure>
                 
             </section>
-            <section class="main__content" >
-                <article class="main__content-about">
+        </header>
+        <main>
+            <section class="main__about">
                     <h2>¿Qué es CreandoMusica?</h2>
                     <p>¡Hola!,</p>
                     <p>Somos una Agencia de Producción Musical enfocada en todo el proceso de creación, para llevar tus ideas a resultados musicales de calidad y competencia para la industria.</p>
@@ -43,12 +28,11 @@
                     <p>Dentro de nuestros servicios te ofrecemos la creación de canciones en diferentes estilos musicales, creación de música para medios de comunicación, Jingles y piezas musicales para publicidad, diseño sonoro y música para cortometrajes y largometrajes. Junto a esto, nuestros servicios y asesorías particulares de mezcla, masterización y de postproducción de audio para broadcasting.</p>
                     <p>También contamos con un departamento pedagógico donde podrás aprender y mejorar tus habilidades, con clases y talleres de fundamentos de la música, composición, arreglos y producción musical.</p>
                     <p>¡No dudes en contactarnos!</p>
-                </article>
-                <article class="main__content-portafolio">
+            </section>
+            <section class="main__portafolio">
                     <h2>Portafolio</h2>
                     <h4>Audios</h4>
-                    <a href="#">Link a nuestro Soundcloud </a>
-                    <p>/Hay que poner el código fuente que da Soundcloud para webs/</p>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1033384477&color=%23050b57&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/javier-vicente-aldunate-duran" title="Javier Aldunate" target="_blank" style="color: #cccccc; text-decoration: none;">Javier Aldunate</a> · <a href="https://soundcloud.com/javier-vicente-aldunate-duran/syntheme" title="Syntheme" target="_blank" style="color: #cccccc; text-decoration: none;">Syntheme</a></div>
                     <h4>Videos</h4>
                     <video controls preload="auto">
                         <source src=" ">
@@ -59,28 +43,33 @@
                     <video controls preload="auto">
                         <source src=" ">
                     </video>
-                </article>
-                <article class="main__content-equipo">
-                    <h2>Equipo</h2>
-                    <figure>
-                        <img src="./Foto_equipo-alt.png" alt="foto de bruno">
-                        <figcaption>Bruno</figcaption>
-                        <img src="./Foto_equipo-alt.png" alt="foto de david">
-                        <figcaption>David</figcaption>
-                        <img src="./Foto_equipo-alt.png"" alt="foto de javier">
-                        <figcaption>Javier</figcaption>
-                    </figure>
-                </article>
-                <article class="main__content-contacto">
+            </section>
+            <section class="main__equipo">
+                <h2>Equipo</h2>
+                <table>
+                        <tr>
+                          <td><img src="./Foto_equipo-alt.png" alt="foto de bruno"></td>
+                           <td><img src="./Foto_equipo-alt.png" alt="foto de david"></td>
+                           <td><img src="./Foto_equipo-alt.png"" alt="foto de javier"></td>
+                        </tr>
+                        <tr>
+                            <td>Bruno</td>
+                             <td>David</td>
+                             <td>Javier</td>
+                        </tr>
+                      
+                </table>
+            </section>
+            <section class="main__contacto">
                     <h2>Contacto</h2>
                     <Form>
                         <label for="correo">
-                            <span>correo</span>
+                            <span>Correo:     </span>
                             <input type="email" id="correo" name="mensaje" placeholder="nombre@ejemplo.com" autocomplete="email" required>
                         </label>
                         <label for="mensaje">
-                            <span>Mensaje</span>    
-                            <input type="text" id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required>
+                            <span>Mensaje: </span>    
+                            <input type="text" id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí"autocomplete="none" required>
                         </label>
                         <input type="submit">
                     </Form>
@@ -89,7 +78,6 @@
                         <li>cmusicachile@gmail.com</li>
                     </ul>
                     <p>Teléfono de contacto : +999 9999 9999</p>
-                </article>
             </section>
         </main>
         <footer class="footer">
